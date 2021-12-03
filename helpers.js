@@ -1,0 +1,1 @@
+export const numericList = data => data.map(line => parseInt(line))
