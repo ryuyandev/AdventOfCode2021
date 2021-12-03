@@ -5,11 +5,9 @@ import path from 'path'
   try {
     const command = process.env.npm_lifecycle_event
     if (command === 'start') {
-      const {
-        default: { scripts }
-      } = await import('./package.json')
-      const puzzles = Object.keys(scripts)
-        .filter(script => script.startsWith('day'))
+      const puzzles = Object.keys(process.env)
+        .filter(key => key.startsWith('npm_package_scripts_day'))
+        .map(key => key.replace('npm_package_scripts_', '').replace('_', ':'))
       
       for (const puzzle of puzzles)
         await runCommand(puzzle)
