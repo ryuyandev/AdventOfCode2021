@@ -27,10 +27,10 @@ async function runCommand(command) {
 
 async function runPuzzle(day, puzzle) {
   const inputPath = path.resolve(day, 'input.txt')
-    const input = await fs.readFile(inputPath)
-    const data = input.toString()
-      .split('\n')
+  const input = await fs.readFile(inputPath)
+  const data = input.toString()
+    .split('\n')
 
-    const { calculate } = await import(`./${day}/${puzzle}.js`)
-    console.log(`${day}:${puzzle}: ${calculate(data)}`)
+  const { calculate } = await import(`./${day}/${puzzle}.js`)
+  console.log(`${day}:${puzzle}: ${calculate(data)}`)
 }
