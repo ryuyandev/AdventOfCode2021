@@ -1,5 +1,5 @@
 import { numericList } from '../helpers.js'
-import { calculate as findIncreases } from './puzzle1.js'
+import { findIncreases } from './puzzle1.js'
 
 export function calculate(data) {
   const denoisedData = numericList(data).reduce((result, _, index, arr) => {

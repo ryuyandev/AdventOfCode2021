@@ -7,4 +7,5 @@ See [Advent of Code](https://adventofcode.com/2021/about)
 ## Usage
 
 1. `npm install`
-2. `npm run day1:puzzle1`
+2. `npm start` to run all puzzles  
+  `npm run day1:puzzle1` to run a single puzzle
