@@ -5,7 +5,7 @@ export function calculate(data) {
     const winningBoards = boards.filter(board => board.markNumber(num))
 
     if (winningBoards.length)
-      return Math.max(winningBoards.map(board => board.getScore()))
+      return Math.max(...winningBoards.map(board => board.getScore()))
   }
 }
 
