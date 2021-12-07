@@ -1,3 +1,5 @@
+import { sumList } from '../helpers.js'
+
 export function calculate(data) {
   const { numbers, boards } = parseData(data)
 
@@ -56,9 +58,8 @@ class BingoBoard {
   }
 
   getScore() {
-    return parseInt(this.lastNum) * Object.keys(this.numbers)
+    return parseInt(this.lastNum) * sumList(Object.keys(this.numbers)
         .filter(boardNum => !this.numbers[boardNum].marked)
-        .map(boardNum => parseInt(boardNum))
-        .reduce((a, b) => a + b)
+        .map(boardNum => parseInt(boardNum)))
   }
 }

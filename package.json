@@ -17,7 +17,9 @@
     "day4:puzzle1": "node index",
     "day4:puzzle2": "node index",
     "day5:puzzle1": "node index",
-    "day5:puzzle2": "node index"
+    "day5:puzzle2": "node index",
+    "day6:puzzle1": "node index csv",
+    "day6:puzzle2": "node index csv"
   },
   "keywords": [],
   "author": "",
