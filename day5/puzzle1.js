@@ -1,4 +1,4 @@
-export function calculate(data) {
+export function run(data) {
   const grid = plotLines(parseLines(data)
     .filter(([x1, y1, x2, y2]) => x1 === x2 || y1 === y2))
 

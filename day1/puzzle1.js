@@ -1,6 +1,6 @@
 import { numericList } from '../helpers.js'
 
-export function calculate(data) {
+export function run(data) {
   return findIncreases(numericList(data))
 }
 

@@ -1,4 +1,4 @@
-export function calculate(data) {
+export function run(data) {
   const totalBits = data[0].length
 
   let gamma = '',

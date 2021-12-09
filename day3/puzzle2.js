@@ -1,6 +1,6 @@
 import { mostCommonBit } from './puzzle1.js'
 
-export function calculate(data) {
+export function run(data) {
   const oxygen = getReading(data, true),
     co2 = getReading(data, false)
 

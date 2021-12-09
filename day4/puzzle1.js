@@ -1,6 +1,6 @@
 import { sumList } from '../helpers.js'
 
-export function calculate(data) {
+export function run(data) {
   const { numbers, boards } = parseData(data)
 
   for (const num of numbers) {

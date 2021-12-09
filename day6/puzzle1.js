@@ -1,6 +1,6 @@
 import { numericList, sumList } from '../helpers.js'
 
-export function calculate(data) {
+export function run(data) {
   return simulateFish(numericList(data), 80)
 }
 

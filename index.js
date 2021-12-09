@@ -36,6 +36,6 @@ async function runPuzzle(day, puzzle, lastArg) {
   const data = input.toString()
     .split(lastArg === 'csv' ? ',' : '\n')
 
-  const { calculate } = await import(`./${day}/${puzzle}.js`)
-  console.log(`${day}:${puzzle}: ${calculate(data)}`)
+  const { run } = await import(`./${day}/${puzzle}.js`)
+  console.log(`${day}:${puzzle}: ${run(data)}`)
 }

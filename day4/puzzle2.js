@@ -1,6 +1,6 @@
 import { parseData } from './puzzle1.js'
 
-export function calculate(data) {
+export function run(data) {
   let { numbers, boards } = parseData(data)
 
   let lastBoards = null
