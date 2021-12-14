@@ -7,6 +7,7 @@ import path from 'path'
     if (command === 'start') {
       const puzzles = Object.keys(process.env)
         .filter(key => key.startsWith('npm_package_scripts_day'))
+        .sort()
         .map(key => ({
           puzzle: key
             .replace('npm_package_scripts_', '')
