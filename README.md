@@ -24,6 +24,5 @@ so I preferred to keep minimal the time between pressing "Run" and receiving a r
 
 ## Usage
 
-1. `npm install`
-2. `npm start` to run all puzzles ||  
-  `npm run day1:puzzle1` to run a single puzzle
+`npm start` to run all puzzles  
+`npm run day1:puzzle1` to run a single puzzle
