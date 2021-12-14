@@ -19,8 +19,8 @@ I chose JavaScript since it's my favorite language.
 I would have used TypeScript, but running TypeScript via replit.com had an unacceptable
 startup delay, presumably due to compilation. For local development this is a non-issue,
 as I've seen compile times quick enough to not impede development flow even when making
-many quick changes, but as I wanted to try to complete these only using replit.com, and
-so I wanted to keep minimal the time between pressing "Run" and receiving a result.
+many quick changes, but I wanted to try to complete this only using replit.com, 
+so I preferred to keep minimal the time between pressing "Run" and receiving a result.
 
 ## Usage
 
