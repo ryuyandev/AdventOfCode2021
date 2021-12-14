@@ -1,4 +1,5 @@
-import { numericGrid, getLowPoints } from './puzzle1.js'
+import { numericGrid } from '../helpers.js'
+import { getLowPoints } from './puzzle1.js'
 
 export function run(data) {
   const grid = numericGrid(data)

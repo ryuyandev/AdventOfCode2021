@@ -25,7 +25,9 @@
     "day8:puzzle1": "node index",
     "day8:puzzle2": "node index",
     "day9:puzzle1": "node index",
-    "day9:puzzle2": "node index"
+    "day9:puzzle2": "node index",
+    "day11:puzzle1": "node index",
+    "day11:puzzle2": "node index"
   },
   "keywords": [],
   "author": "",

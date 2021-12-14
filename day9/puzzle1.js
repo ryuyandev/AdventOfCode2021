@@ -1,4 +1,4 @@
-import { numericList } from '../helpers.js'
+import { numericGrid } from '../helpers.js'
 
 export function run(data) {
   let total = 0
@@ -8,9 +8,6 @@ export function run(data) {
   
   return total
 }
-
-export const numericGrid = (data) => data
-  .map(line => numericList(line.split('')))
 
 export function* getLowPoints(grid) {
   for (let y = 0; y < grid.length; y++) {

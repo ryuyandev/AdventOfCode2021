@@ -1,4 +1,4 @@
-export function run(data) {
+  export function run(data) {
   const result = data.reduce((result, command) => {
     let [direction, value] = command.split(' ')
     value = parseInt(value)

@@ -7,16 +7,22 @@ import path from 'path'
     if (command === 'start') {
       const puzzles = Object.keys(process.env)
         .filter(key => key.startsWith('npm_package_scripts_day'))
-        .sort()
-        .map(key => ({
-          puzzle: key
+        .map(key => {
+          const command = key
             .replace('npm_package_scripts_', '')
-            .replace('_', ':'),
-          argv: process.env[key].split(' ')
-        }))
+            .replace('_', ':')
+          const [day, puzzle] = command.split(':')
+
+          return {
+            command,
+            sortOrder: parseInt(day.substring(3)) * 10 + parseInt(puzzle.substring(6)),
+            argv: process.env[key].split(' ')
+          }
+        })
+        .sort((a, b) => a.sortOrder - b.sortOrder)
       
-      for (const { puzzle, argv } of puzzles)
-        await runCommand(puzzle, argv.pop())
+      for (const { command, argv } of puzzles)
+        await runCommand(command, argv.pop())
     } else if (command.includes(':'))
       await runCommand(command, process.argv.pop())
     else
