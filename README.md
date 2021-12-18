@@ -11,6 +11,7 @@ See [Advent of Code](https://adventofcode.com/2021/about)
 - Use Git via replit.com
 - No excessively slow solutions
 - Running all 50 puzzles sequentially should complete in a reasonable amount of time
+- Reuse some code from puzzle1 in puzzle2 where reasonable
 - Have fun in a language I enjoy
 
 ## Notes
