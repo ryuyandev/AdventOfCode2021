@@ -31,7 +31,11 @@
     "day11:puzzle1": "node index",
     "day11:puzzle2": "node index",
     "day12:puzzle1": "node index",
-    "day12:puzzle2": "node index"
+    "day12:puzzle2": "node index",
+    "day13:puzzle1": "node index",
+    "day13:puzzle2": "node index",
+    "day14:puzzle1": "node index",
+    "day14:puzzle2": "node index"
   },
   "keywords": [],
   "author": "",
